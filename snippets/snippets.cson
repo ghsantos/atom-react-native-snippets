@@ -51,3 +51,29 @@
         },
       });
       '''
+
+  # lifecycle
+  'React constructor':
+    'prefix': 'cns'
+    'body': '''constructor(props) {
+      super(props);
+
+      this.state = {
+        $1
+      };
+    }
+    '''
+
+  'React componentDidMount':
+    'prefix': 'cdm'
+    'body': '''componentDidMount() {
+      $1
+    }
+    '''
+
+  'React componentWillUnmount':
+    'prefix': 'cwm'
+    'body': '''componentWillUnmount() {
+      $1
+    }
+    '''
